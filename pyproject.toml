@@ -1,0 +1,17 @@
+[project]
+name = "url-to-qr"
+version = "0.1.0"
+description = "CLI tool to turn URLs into QR codes"
+authors = [{name = "Gdev45"}]
+dependencies = [
+    "qrcode[pil]",
+    "rich"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+URL-to-QR = "url_to_qr.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
